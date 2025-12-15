@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyae's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Pyae</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span class="name-box">Pyae</span></h1>
+        <p>Junior Front-End Developer & Web Designer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+           <div class="project-card">
+            <img src="images/form-validaton.png" alt="Form Validation" />
+              <h3>Form Validation</h3>
+              <p>A form validation project that checks user input before submitting and shows error if input is invalid.</p>
+              <p class="tech">Tech used: HTML · CSS · JavaScript</p>
+              <a href="Form/index.html" class="btn" target="_blank">View Project</a>
+           </div>
+           <div class="project-card">
+            <img src="images/counter.png" alt="Counter"/>
+              <h3>Counter App</h3>
+              <p>A counter app that lets users increase and decrease a number dynamically.</p>
+              <p class="tech">Tech used: HTML · CSS · JavaScript</p>
+              <a href="Counter/index.html" class="btn" target="_blank">View Project</a>
+           </div>
+           <div class="project-card">
+            <img src="images/to-do-list.png" alt="To-Do-List"/>
+              <h3>Todo List App</h3>
+              <p>A simple todo list app with add, remove, and check features.</p>
+              <p class="tech">Tech used: HTML · CSS · JavaScript</p>
+              <a href="To-Do-List/index.html" class="btn" target="_blank">View Project</a>
+           </div>
+           <div class="project-card">
+            <img src="images/calculator.png" alt="Calculator"/>
+              <h3>Calculator App</h3>
+              <p>A simple calculator that allows users to input numbers and operators and gets a calculated result.</p>
+              <p class="tech">Tech used: HTML · CSS · JavaScript</p>
+              <a href="Calculator/index.html" class="btn" target="_blank">View Project</a>
+           </div>
+        </div>
+     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I’m a web designer who loves building clean, responsive, modern websites.</p>
+        <ul>
+            <li>Practicing HTML, CSS, and JavaScript for interactive websites.</li>
+            <li>Learning responsive design with Flexbox and Grid.</li>
+            <li>Passionate about building clean and user-friendly interfaces.</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Practicing semantic HTML to structure web pages clearly and effectively.</p>
+        </div>
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Learning responsive layouts, Flexbox, Grid, and styling websites with clean design.</p>
+        </div>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Building interactivity with DOM manipulation, events, and basic ES6 features.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Responsive Deign</h3>
+            <p>Ensuring websites look good and work well on mobile, tablet, and desktop screens.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

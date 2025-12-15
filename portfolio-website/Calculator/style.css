@@ -1,0 +1,72 @@
+/* ===== Body & Centering ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f1724;      /* dark background */
+  color: #e6eef8;           /* light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;            /* full screen height */
+  margin: 0;
+}
+
+/* ===== Calculator Card ===== */
+.calculator-card {
+  background: #1e293b;      /* dark card */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 260px;             /* fixed width */
+}
+
+/* ===== Display ===== */
+#display {
+  background: #0f1724;      /* darker display */
+  color: #e6eef8;
+  font-size: 36px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: right;        /* numbers align right */
+  min-height: 50px;
+  transition: opacity 0.2s ease;
+}
+
+/* ===== Buttons Container ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns grid */
+  gap: 10px;                           /* space between buttons */
+}
+
+/* ===== Buttons Style ===== */
+.buttons button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3b82f6;       /* blue buttons */
+  color: white;
+  transition: transform 0.1s, background 0.2s;
+}
+
+/* Hover & Click Effects */
+.buttons button:hover {
+  background: #60a5fa;
+  transform: scale(1.05);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+/* ===== Operators Style ===== */
+.operator {
+  background: #f97316;       /* orange for operators */
+}
+
+.operator:hover {
+  background: #fb923c;
+}

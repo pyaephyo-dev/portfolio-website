@@ -1,0 +1,58 @@
+/* Counter App Card */
+.counter-card{
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    text-align: center;
+    width: 260px;
+    margin: 20px auto;
+}
+
+/* Display */
+#count-display{
+    font-size: 48px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #0f1724;
+    color: #e6eef8;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Buttons Container */
+.counter-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/*Buttons */
+.counter-buttons button{
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #3b82f6;
+    color: white;
+    transition: transform 0.1s, background 0.2s;
+}
+
+/* Hover & Click Effects */
+.counter-buttons button:hover{
+    background-color: #60a5fa;
+    transform: scale(1.05);
+}
+.counter-buttons button:active{
+    transform: scale(0.95);
+}
+
+/* Optional: Special color for Reset button */
+#reset{
+    background: #f97316;
+}
+#reset:hover{
+    background: #fb923c;
+}

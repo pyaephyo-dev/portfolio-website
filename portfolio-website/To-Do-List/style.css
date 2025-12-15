@@ -1,0 +1,130 @@
+/* Page & font */
+:root{
+  --bg: #071021;
+  --card: #0f1724;
+  --accent: #60a5fa;
+  --muted: #94a3b8;
+  --card-radius: 12px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg,#041027 0%,var(--bg) 100%);
+  color:#e6eef8;
+  padding:24px;
+}
+
+/* Card */
+.todo-card{
+  width:100%;
+  max-width:480px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: var(--card-radius);
+  padding:20px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+/* Header */
+.todo-card header h1{
+  margin:0 0 6px 0;
+  font-size:20px;
+}
+.todo-card .hint{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Input row */
+.input-row{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+  margin-bottom:14px;
+}
+.input-row input{
+  flex:1;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.02);
+  color:inherit;
+  font-size:15px;
+  outline: none;
+}
+.input-row input::placeholder{ color: #9aa7bd; }
+.input-row button{
+  padding:12px 16px;
+  border-radius:10px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition: transform .08s ease, background .12s;
+}
+.input-row button:hover{ transform:translateY(-2px); }
+
+/* Tasks list */
+.tasks{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:6px;
+  margin-bottom:12px;
+}
+
+/* Single task */
+.task {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px 12px;
+  border-radius:10px;
+  background: rgba(255,255,255,0.015);
+  border:1px solid rgba(255,255,255,0.02);
+  transition: transform .12s ease, opacity .12s ease;
+  opacity:1;
+}
+.task .text{ flex:1; font-size:15px; }
+.task button {
+  border:none;
+  background:transparent;
+  color:var(--muted);
+  cursor:pointer;
+  padding:6px 8px;
+  border-radius:8px;
+}
+.task button:hover{ color:white; background: rgba(255,255,255,0.03); transform:translateY(-1px); }
+
+/* Footer */
+.todo-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  color:var(--muted);
+  font-size:13px;
+  margin-top:8px;
+}
+.ghost{
+  background:transparent;
+  border:1px dashed rgba(255,255,255,0.03);
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  color: gray;
+}
+
+/* Small responsive tweak */
+@media (max-width:420px){
+  .todo-card{ padding:16px; width:92%; }
+  .input-row button{ padding:10px 12px; }
+}
